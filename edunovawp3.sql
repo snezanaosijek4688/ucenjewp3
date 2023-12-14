@@ -11,7 +11,7 @@ vaucer bit
 );
 
 
-
+ja sam glupa
 
 
 
