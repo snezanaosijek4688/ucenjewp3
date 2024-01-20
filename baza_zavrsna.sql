@@ -29,7 +29,7 @@ sifra int not null primary key identity (1,1),
 ime varchar(50),
 prezime varchar(50),
 specijalizacija varchar(50),
-radnovrijeme datetime,
+radnovrijeme varchar(30)
 
 
 );
