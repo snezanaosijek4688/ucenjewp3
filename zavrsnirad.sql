@@ -32,6 +32,17 @@ specijalizacija varchar(50),
 radnovrijeme varchar(30)
 
 
+);
+
+
+
+alter table korisnici add foreign key (trener_sifra) references treneri(sifra);
+
+
+
+
+
+
 
 
 insert into treneri (ime,prezime,specijalizacija,radnovrijeme) values
@@ -42,7 +53,7 @@ insert into treneri (ime,prezime,specijalizacija,radnovrijeme) values
 
 
  --od 1 do 10
- insert into korisnici (ime, prezime, datumrodenja, email,telefon,trenersifra) values
+ insert into korisnici (ime, prezime, datumrodenja, email,telefon,trener_sifra) values
 
 ('Dragana','Jankovic', '1988-11-11','draganjankovica@gmail.com','0981600669',1),
 ('Svetlana','Grkovic','1980-08-11','svetlanagrkovic@gmail.com','0983336679',2),
@@ -55,13 +66,3 @@ insert into treneri (ime,prezime,specijalizacija,radnovrijeme) values
 ('Marko','Veselinovic','1995-06.06','markoveselinovic@gmail.com','0971110909',1),
 ('Dina','Markovic','1996-01-01','dinamarkovic@gmail.com','098787909',2),
 ('Ivan','Maric','1991-09-09','ivanmaric@gmail.com)','097552233',1);
-
-
-
-
-
-
-
-
-
-alter table korisnici add foreign key (trener_sifra) references treneri(sifra);
